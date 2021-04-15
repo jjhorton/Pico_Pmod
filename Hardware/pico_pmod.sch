@@ -369,17 +369,17 @@ Text GLabel 4650 2100 2    50   Input ~ 0
 Pico_3V3
 Text GLabel 6650 4400 2    50   Input ~ 0
 Pico_3V3
-Text GLabel 8150 4400 2    50   Input ~ 0
+Text GLabel 9100 4500 2    50   Input ~ 0
 Pico_3v3_EN
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 607A9E26
-P 7950 4200
-F 0 "J?" V 7950 4400 50  0000 R CNN
-F 1 "Conn_01x02" V 7950 3950 50  0000 R CNN
-F 2 "" H 7950 4200 50  0001 C CNN
-F 3 "~" H 7950 4200 50  0001 C CNN
-	1    7950 4200
+P 8900 4300
+F 0 "J?" V 8900 4500 50  0000 R CNN
+F 1 "Conn_01x02" V 8900 4050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8900 4300 50  0001 C CNN
+F 3 "~" H 8900 4300 50  0001 C CNN
+	1    8900 4300
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -388,7 +388,7 @@ U 1 1 607B1D77
 P 6400 4200
 F 0 "J?" V 6400 4400 50  0000 R CNN
 F 1 "Conn_01x02" V 6400 3950 50  0000 R CNN
-F 2 "" H 6400 4200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6400 4200 50  0001 C CNN
 F 3 "~" H 6400 4200 50  0001 C CNN
 	1    6400 4200
 	0    -1   -1   0   
@@ -396,7 +396,7 @@ $EndComp
 Text GLabel 4650 1700 2    50   Input ~ 0
 Pico_VBUS
 Text GLabel 4650 1800 2    50   Input ~ 0
-Pic_VSYS
+Pico_VSYS
 Wire Wire Line
 	4400 1700 4650 1700
 Wire Wire Line
@@ -408,37 +408,35 @@ Wire Wire Line
 Wire Wire Line
 	6500 4400 6650 4400
 Wire Wire Line
-	8050 4400 8150 4400
-Text GLabel 8200 5100 2    50   Input ~ 0
+	9000 4500 9100 4500
+Text GLabel 6600 5900 2    50   Input ~ 0
 Pico_VBUS
-Text GLabel 6650 5150 2    50   Input ~ 0
-Pic_VSYS
+Text GLabel 9050 5750 3    50   Input ~ 0
+Pico_VSYS
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x03 J?
 U 1 1 607BB4AD
-P 6400 4950
-F 0 "J?" V 6400 5150 50  0000 R CNN
-F 1 "Conn_01x02" V 6400 4700 50  0000 R CNN
-F 2 "" H 6400 4950 50  0001 C CNN
-F 3 "~" H 6400 4950 50  0001 C CNN
-	1    6400 4950
+P 9050 5550
+F 0 "J?" V 9050 5750 50  0000 R CNN
+F 1 "Conn_01x03" V 9050 5300 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9050 5550 50  0001 C CNN
+F 3 "~" H 9050 5550 50  0001 C CNN
+	1    9050 5550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 607BCE20
-P 7950 4900
-F 0 "J?" V 7950 5100 50  0000 R CNN
-F 1 "Conn_01x02" V 7950 4650 50  0000 R CNN
-F 2 "" H 7950 4900 50  0001 C CNN
-F 3 "~" H 7950 4900 50  0001 C CNN
-	1    7950 4900
+P 6350 5700
+F 0 "J?" V 6350 5900 50  0000 R CNN
+F 1 "Conn_01x02" V 6350 5450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6350 5700 50  0001 C CNN
+F 3 "~" H 6350 5700 50  0001 C CNN
+	1    6350 5700
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6650 5150 6500 5150
-Wire Wire Line
-	8200 5100 8050 5100
+	6600 5900 6450 5900
 Text GLabel 6800 3250 0    50   Input ~ 0
 GPIO_14
 Text GLabel 7950 3250 2    50   Input ~ 0
@@ -517,4 +515,77 @@ Wire Wire Line
 	6800 2250 7100 2250
 Wire Wire Line
 	7100 2150 6800 2150
+$Comp
+L power:+5V #PWR?
+U 1 1 60789CE8
+P 8700 5750
+F 0 "#PWR?" H 8700 5600 50  0001 C CNN
+F 1 "+5V" V 8715 5878 50  0000 L CNN
+F 2 "" H 8700 5750 50  0001 C CNN
+F 3 "" H 8700 5750 50  0001 C CNN
+	1    8700 5750
+	0    -1   -1   0   
+$EndComp
+Text Notes 5800 6150 0    50   ~ 0
+Direct input from the \nMicro USB connector approx 5v
+Text Notes 8650 6400 0    50   ~ 0
+Main System input voltage, \ncan be in the range of 1.8V to 5.5V
+Text Notes 8600 4850 0    50   ~ 0
+3V3_en connects to the SMPS enable pin\nto de-power the pico pull to ground\n(Pi Pico Datasheet, Page 8)
+Text Notes 5900 4750 0    50   ~ 0
+The main 3v3 supply from the pico, \nupto 300mA max draw
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607A1448
+P 9350 5750
+F 0 "#PWR?" H 9350 5600 50  0001 C CNN
+F 1 "+3.3V" V 9365 5878 50  0000 L CNN
+F 2 "" H 9350 5750 50  0001 C CNN
+F 3 "" H 9350 5750 50  0001 C CNN
+	1    9350 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9150 5750 9350 5750
+Wire Wire Line
+	8950 5750 8700 5750
+$Comp
+L power:+5V #PWR?
+U 1 1 607A75D5
+P 6200 5900
+F 0 "#PWR?" H 6200 5750 50  0001 C CNN
+F 1 "+5V" V 6215 6028 50  0000 L CNN
+F 2 "" H 6200 5900 50  0001 C CNN
+F 3 "" H 6200 5900 50  0001 C CNN
+	1    6200 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 5900 6200 5900
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607ACAD5
+P 6300 4400
+F 0 "#PWR?" H 6300 4250 50  0001 C CNN
+F 1 "+3.3V" V 6315 4528 50  0000 L CNN
+F 2 "" H 6300 4400 50  0001 C CNN
+F 3 "" H 6300 4400 50  0001 C CNN
+	1    6300 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 4400 6400 4400
+$Comp
+L power:GND #PWR?
+U 1 1 607B85C8
+P 8750 4500
+F 0 "#PWR?" H 8750 4250 50  0001 C CNN
+F 1 "GND" V 8755 4372 50  0000 R CNN
+F 2 "" H 8750 4500 50  0001 C CNN
+F 3 "" H 8750 4500 50  0001 C CNN
+	1    8750 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 4500 8750 4500
 $EndSCHEMATC
