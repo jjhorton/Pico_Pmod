@@ -588,4 +588,89 @@ F 3 "" H 8750 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 4500 8750 4500
+Text GLabel 3650 6100 2    50   Input ~ 0
+Pico_Run
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 607985C4
+P 3450 5900
+F 0 "J6" V 3450 6100 50  0000 R CNN
+F 1 "Conn_01x02" V 3450 5650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3450 5900 50  0001 C CNN
+F 3 "~" H 3450 5900 50  0001 C CNN
+	1    3450 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 6100 3650 6100
+Text Notes 3000 6400 0    50   ~ 0
+Pico Run Pin, held high by Pico Board\nPull to ground to reset the Pico
+$Comp
+L power:GND #PWR0124
+U 1 1 607985CC
+P 3300 6100
+F 0 "#PWR0124" H 3300 5850 50  0001 C CNN
+F 1 "GND" V 3305 5972 50  0000 R CNN
+F 2 "" H 3300 6100 50  0001 C CNN
+F 3 "" H 3300 6100 50  0001 C CNN
+	1    3300 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 6100 3300 6100
+Text GLabel 4600 2700 2    50   Input ~ 0
+Pico_Run
+Wire Wire Line
+	4600 2700 4400 2700
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 607A6E5A
+P 3850 4900
+F 0 "J?" V 3850 5100 50  0000 R CNN
+F 1 "Conn_01x05" H 4000 4500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3850 4900 50  0001 C CNN
+F 3 "~" H 3850 4900 50  0001 C CNN
+	1    3850 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3500 4700 0    50   Input ~ 0
+ADC_VREF
+Text GLabel 3500 4800 0    50   Input ~ 0
+ADC2
+Text GLabel 3500 4900 0    50   Input ~ 0
+AGND
+Text GLabel 3500 5000 0    50   Input ~ 0
+ADC1
+Text GLabel 3500 5100 0    50   Input ~ 0
+ADC0
+Wire Wire Line
+	3500 4700 3650 4700
+Wire Wire Line
+	3500 4800 3650 4800
+Wire Wire Line
+	3500 4900 3650 4900
+Wire Wire Line
+	3650 5000 3500 5000
+Wire Wire Line
+	3500 5100 3650 5100
+Text GLabel 4650 2200 2    50   Input ~ 0
+ADC_VREF
+Text GLabel 4650 2300 2    50   Input ~ 0
+ADC2
+Text GLabel 4650 2400 2    50   Input ~ 0
+AGND
+Text GLabel 4650 2500 2    50   Input ~ 0
+ADC1
+Text GLabel 4650 2600 2    50   Input ~ 0
+ADC0
+Wire Wire Line
+	4650 2200 4400 2200
+Wire Wire Line
+	4400 2300 4650 2300
+Wire Wire Line
+	4650 2400 4400 2400
+Wire Wire Line
+	4400 2500 4650 2500
+Wire Wire Line
+	4650 2600 4400 2600
 $EndSCHEMATC
