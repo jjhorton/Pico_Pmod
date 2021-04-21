@@ -6,22 +6,33 @@
 
 #include "pico/stdlib.h"
 
+#define look_up_table_length = 256;
+
 int main() {
-    const uint LED_PIN_0 = 0;
-		const uint LED_PIN_1 = 1;
+		const uint LED_PINs[] = {0,1,2,3,4,5,6,7};
+		const uint CLK_PIN = 9;
 
-    gpio_init(LED_PIN_0);
-		gpio_init(LED_PIN_1);
 
-    gpio_set_dir(LED_PIN_0, GPIO_OUT);
-		gpio_set_dir(LED_PIN_1, GPIO_OUT);
+		for(int x = 0; x<8; x++) {
+				gpio_init(LED_PINs[x]);
+				gpio_set_dir(LED_PINs[x], GPIO_OUT);
+		}
+
+		uint temp = 0;
 
 		while (true) {
-        gpio_put(LED_PIN_0, 1);
-				gpio_put(LED_PIN_1, 0);
-        sleep_ms(250);
-				gpio_put(LED_PIN_0, 0);
-        gpio_put(LED_PIN_1, 1);
-        sleep_ms(250);
+			temp = 0;
+			for(int x = 0; x<8; x++) {
+        gpio_put(LED_PINs[x], temp);
+				temp = !temp;
+			}
+			sleep_ms(250);
+
+			temp = 1;
+			for(int x = 0; x<8; x++) {
+        gpio_put(LED_PINs[x], temp);
+				temp = !temp;
+			}
+      sleep_ms(250);
     }
 }
