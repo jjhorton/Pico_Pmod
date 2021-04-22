@@ -625,34 +625,34 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x05 J7
 U 1 1 607A6E5A
-P 10050 1600
-F 0 "J7" V 10050 1800 50  0000 R CNN
-F 1 "Conn_01x05" H 10200 1200 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10050 1600 50  0001 C CNN
-F 3 "~" H 10050 1600 50  0001 C CNN
-	1    10050 1600
+P 10050 1350
+F 0 "J7" V 10050 1550 50  0000 R CNN
+F 1 "Conn_01x05" H 10200 950 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10050 1350 50  0001 C CNN
+F 3 "~" H 10050 1350 50  0001 C CNN
+	1    10050 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 9700 1400 0    50   Input ~ 0
+Text GLabel 9700 1150 0    50   Input ~ 0
 ADC_VREF
-Text GLabel 9700 1500 0    50   Input ~ 0
+Text GLabel 9700 1250 0    50   Input ~ 0
 ADC2
-Text GLabel 9700 1600 0    50   Input ~ 0
+Text GLabel 9700 1350 0    50   Input ~ 0
 AGND
-Text GLabel 9700 1700 0    50   Input ~ 0
+Text GLabel 9700 1450 0    50   Input ~ 0
 ADC1
-Text GLabel 9700 1800 0    50   Input ~ 0
+Text GLabel 9700 1550 0    50   Input ~ 0
 ADC0
 Wire Wire Line
-	9700 1400 9850 1400
+	9700 1150 9850 1150
 Wire Wire Line
-	9700 1500 9850 1500
+	9700 1250 9850 1250
 Wire Wire Line
-	9700 1600 9850 1600
+	9700 1350 9850 1350
 Wire Wire Line
-	9850 1700 9700 1700
+	9850 1450 9700 1450
 Wire Wire Line
-	9700 1800 9850 1800
+	9700 1550 9850 1550
 Text GLabel 3300 1950 2    50   Input ~ 0
 ADC_VREF
 Text GLabel 3300 2050 2    50   Input ~ 0
@@ -674,8 +674,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 2350 3050 2350
 Wire Notes Line
-	11150 4350 11150 6300
-Wire Notes Line
 	500  6300 11150 6300
 Wire Notes Line
 	500  4350 11150 4350
@@ -691,4 +689,38 @@ Text Notes 4450 650  0    79   ~ 0
 Duel Extended PMod Connector
 Text Notes 8300 650  0    79   ~ 0
 ADC Connections Breakout\n
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6081E990
+P 9700 3600
+F 0 "SW?" H 9700 3885 50  0000 C CNN
+F 1 "SW_Push" H 9700 3794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 9700 3800 50  0001 C CNN
+F 3 "~" H 9700 3800 50  0001 C CNN
+	1    9700 3600
+	1    0    0    -1  
+$EndComp
+Text GLabel 10200 3600 2    50   Input ~ 0
+Pico_Run
+$Comp
+L power:GND #PWR?
+U 1 1 60823560
+P 9100 3600
+F 0 "#PWR?" H 9100 3350 50  0001 C CNN
+F 1 "GND" V 9105 3472 50  0000 R CNN
+F 2 "" H 9100 3600 50  0001 C CNN
+F 3 "" H 9100 3600 50  0001 C CNN
+	1    9100 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9100 3600 9500 3600
+Wire Wire Line
+	9900 3600 10200 3600
+Wire Notes Line
+	11150 2350 8200 2350
+Wire Notes Line
+	11150 2350 11150 6300
+Text Notes 8300 2550 0    79   ~ 0
+Push Button to Reset Pico for programming
 $EndSCHEMATC
