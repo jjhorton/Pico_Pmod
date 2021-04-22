@@ -588,36 +588,6 @@ F 3 "" H 9000 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9150 5300 9000 5300
-Text GLabel 5700 7000 2    50   Input ~ 0
-Pico_Run
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 607985C4
-P 5500 6800
-F 0 "J6" V 5500 7000 50  0000 R CNN
-F 1 "Conn_01x02" V 5500 6550 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 6800 50  0001 C CNN
-F 3 "~" H 5500 6800 50  0001 C CNN
-	1    5500 6800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5600 7000 5700 7000
-Text Notes 5050 7300 0    50   ~ 0
-Pico Run Pin, held high by Pico Board\nPull to ground to reset the Pico
-$Comp
-L power:GND #PWR0124
-U 1 1 607985CC
-P 5350 7000
-F 0 "#PWR0124" H 5350 6750 50  0001 C CNN
-F 1 "GND" V 5355 6872 50  0000 R CNN
-F 2 "" H 5350 7000 50  0001 C CNN
-F 3 "" H 5350 7000 50  0001 C CNN
-	1    5350 7000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5500 7000 5350 7000
 Text GLabel 3250 2450 2    50   Input ~ 0
 Pico_Run
 Wire Wire Line
@@ -690,10 +660,10 @@ Duel Extended PMod Connector
 Text Notes 8300 650  0    79   ~ 0
 ADC Connections Breakout\n
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 6081E990
 P 9700 3600
-F 0 "SW?" H 9700 3885 50  0000 C CNN
+F 0 "SW1" H 9700 3885 50  0000 C CNN
 F 1 "SW_Push" H 9700 3794 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 9700 3800 50  0001 C CNN
 F 3 "~" H 9700 3800 50  0001 C CNN
@@ -703,10 +673,10 @@ $EndComp
 Text GLabel 10200 3600 2    50   Input ~ 0
 Pico_Run
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0125
 U 1 1 60823560
 P 9100 3600
-F 0 "#PWR?" H 9100 3350 50  0001 C CNN
+F 0 "#PWR0125" H 9100 3350 50  0001 C CNN
 F 1 "GND" V 9105 3472 50  0000 R CNN
 F 2 "" H 9100 3600 50  0001 C CNN
 F 3 "" H 9100 3600 50  0001 C CNN
