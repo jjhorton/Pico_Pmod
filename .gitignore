@@ -2,7 +2,8 @@
 .DS_Store
 
 # Software Build Files
-Software/build/
+Software/Buttons/build/
+Software/Counter/build/
 
 # Kicad Files
 
