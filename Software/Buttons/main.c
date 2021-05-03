@@ -14,7 +14,7 @@ int main() {
 		//const uint SEVEN_SEGMENT_PINS[] = {12,11,8,15,13,10,9,14};
 		const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
 		//const uint BUTTON_PINS[] = {2,3,18,19,16,17,20,21};
-		const uint BUTTON_PINS[] = {2,18,16,20,3,19,17,21};
+		const uint BUTTON_PINS[] = {2,16,18,20,3,17,19,21};
 		const uint CLK_PIN = 9;
 
 		uint8_t lookup_table[LOOKUP_TABLE_LENGTH];
