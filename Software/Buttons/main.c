@@ -13,7 +13,8 @@ int main() {
 		//const uint SEVEN_SEGMENT_PINS[] = {9,10,13,15,8,11,12,14};
 		//const uint SEVEN_SEGMENT_PINS[] = {12,11,8,15,13,10,9,14};
 		const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
-		const uint BUTTON_PINS[] = {2,3,16,17,18,19,20,21}
+		//const uint BUTTON_PINS[] = {2,3,18,19,16,17,20,21};
+		const uint BUTTON_PINS[] = {2,18,16,20,3,19,17,21};
 		const uint CLK_PIN = 9;
 
 		uint8_t lookup_table[LOOKUP_TABLE_LENGTH];
@@ -60,9 +61,15 @@ int main() {
 		while (true) {
 
 			// Read the values from the buttons
-			for(int x = 0; x<8; x++) {
-				gpio_get(SEVEN_SEGMENT_PINS[x]);
+			input1 = 0;
+			for(int x = 0; x<4; x++) {
+				input1 = (gpio_get(BUTTON_PINS[x])<<x) + input1;
 			}
+			input2 = 0;
+			for(int x = 0; x<4; x++) {
+				input2 = (gpio_get(BUTTON_PINS[x+4])<<x) + input2;
+			}
+
 			//for the first digit
 			for(int x = 0; x<7; x++) {
         gpio_put(SEVEN_SEGMENT_PINS[x], (characters[input1] >> x) & 1U);
