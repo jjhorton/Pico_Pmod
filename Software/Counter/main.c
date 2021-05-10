@@ -6,7 +6,7 @@
 
 #include "pico/stdlib.h"
 
-#define PAUSE_LENGTH 100;
+#define PAUSE_LENGTH 100
 
 int main() {
 		const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
