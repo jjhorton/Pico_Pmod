@@ -72,6 +72,7 @@ int main() {
 		setup_display();
 
 		//initalise the counters used to count up on the display
+
 		uint counter = 0;
 		uint counter1 = 0;
 		uint counter2 = 0;
@@ -81,7 +82,7 @@ int main() {
 			set_display(counter1, counter2);
 			counter++;
 
-			if(counter>LOOKUP_TABLE_LENGTH){ counter = 0; counter1++;}
+			if(counter>PAUSE_LENGTH){ counter = 0; counter1++;}
 			if(counter1>15){ counter1=0; counter2++;}
 			if(counter2>15){ counter2=0;}
     }
