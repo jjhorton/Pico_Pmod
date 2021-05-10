@@ -7,7 +7,7 @@
 #include "pico/stdlib.h"
 
 #define LCD_DISPLAY 1
-#define LOOKUP_TABLE_LENGTH 100
+#define LOOKUP_TABLE_LENGTH 50
 
 #if (LCD_DISPLAY==0)
 	//if plugged into pmod1
@@ -76,8 +76,7 @@ int main() {
 		uint counter1 = 0;
 		uint counter2 = 0;
 
-
-
+		// main loop for updating the display and updating the counter
 		while (true) {
 			set_display(counter1, counter2);
 			counter++;
