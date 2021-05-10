@@ -6,15 +6,15 @@
 
 #include "pico/stdlib.h"
 
+#define LCD_DISPLAY 1
 #define LOOKUP_TABLE_LENGTH 100
-#define LCD_DISPLAY 0;
 
-#ifdef LCD_DISPLAY
+#if (LCD_DISPLAY==0)
 	//if plugged into pmod1
 	const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
 #else
 	//if plugged into pmod0
-	const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
+	const uint SEVEN_SEGMENT_PINS[] = {21,19,17,3,20,18,16,2};
 #endif
 
 int setup_display(){
