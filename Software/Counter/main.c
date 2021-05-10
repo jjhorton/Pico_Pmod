@@ -1,13 +1,25 @@
 /**
  * Copyright (c) 2021 James Horton
  *
- * 
+ *
  */
 
 #include "pico/stdlib.h"
 
 #define LOOKUP_TABLE_LENGTH 100
+#define LCD_DISPLAY 0;
 
+int set_display(int num1, int num2){
+	#ifdef LCD_DISPLAY == 0
+		const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
+	#else
+		const uint SEVEN_SEGMENT_PINS[] = {9,11,13,15,8,10,12,14};
+	#endif
+
+	
+
+	return 0;
+}
 
 int main() {
 		//const uint SEVEN_SEGMENT_PINS[] = {9,10,13,15,8,11,12,14};
