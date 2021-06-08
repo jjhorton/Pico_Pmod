@@ -93,7 +93,6 @@ outputs:
       normalize_values: true
       normalize_locale: true
       html:
-        logo: '../images/inti.png'
         digikey_link: 'digikey#'
         highlight_empty: false
 
