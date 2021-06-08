@@ -97,18 +97,6 @@ outputs:
         digikey_link: 'digikey#'
         highlight_empty: false
 
-  - name: 'bom_xlsx'
-    comment: "Bill of Materials in XLSX format"
-    type: bom
-    dir: BoM
-    options:
-      <<: *bom_options
-      format: XLSX
-      xlsx:
-        logo: '../images/inti.png'
-        digikey_link: 'digikey#'
-        highlight_empty: false
-
   - name: 'bom_csv'
     comment: "Bill of Materials in CSV format"
     type: bom
