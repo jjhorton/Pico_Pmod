@@ -27,9 +27,9 @@ jobs:
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
-        schema: 'Hardware/Host/pico_pmod.sch'
+        schema: 'Hardware/Host/pico_pmod_host.sch'
         # optional - PCB design file
-        board: 'Hardware/Host/pico_pmod.kicad_pcb'
+        board: 'Hardware/Host/pico_pmod_host.kicad_pcb'
 
     - name: Retrieve results
       if: ${{ always() }}
