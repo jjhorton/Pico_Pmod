@@ -1,0 +1,41 @@
+name: "KiCad CI/CD for Client"
+
+on:
+  push:
+    paths:
+      - 'Hardware/Client/*.sch'
+      - 'Hardware/Client/*.kicad_pcb'
+      - 'Hardware/kibot.yml'
+      - '.github/workflows/client_kicad.yml'
+  pull_request:
+    paths:
+      - 'Hardware/Client/*.sch'
+      - 'Hardware/Client/*.kicad_pcb'
+      - 'Hardware/kibot.yml'
+      - '.github/workflows/client_kicad.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Fabrication:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: INTI-CMNB/KiBot@v1
+      with:
+        # Required - kibot config file
+        config: Hardware/kibot.yml
+        # optional - prefix to output defined in config
+        dir: Hardware/Fabrication
+        # optional - schematic file
+        schema: 'Hardware/Client/pico_pmod.sch'
+        # optional - PCB design file
+        board: 'Hardware/Client/pico_pmod.kicad_pcb'
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: Fabrication_Files
+        path: |
+          Hardware/Fabrication/
+        if-no-files-found: warn
