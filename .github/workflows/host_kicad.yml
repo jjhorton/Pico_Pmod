@@ -5,11 +5,13 @@ on:
     paths:
       - 'Hardware/Host/*.sch'
       - 'Hardware/Host/*.kicad_pcb'
+      - 'Hardware/kibot.yml'
       - '.github/workflows/host_kicad.yml'
   pull_request:
     paths:
       - 'Hardware/Host/*.sch'
       - 'Hardware/Host/*.kicad_pcb'
+      - 'Hardware/kibot.yml'
       - '.github/workflows/host_kicad.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -21,7 +23,7 @@ jobs:
     - uses: INTI-CMNB/KiBot@v1
       with:
         # Required - kibot config file
-        config: Hardware/kibot.yaml
+        config: Hardware/kibot.yml
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
