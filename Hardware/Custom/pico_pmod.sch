@@ -101,7 +101,7 @@ L power:GND #PWR0104
 U 1 1 60EA83A7
 P 9200 3350
 F 0 "#PWR0104" H 9200 3100 50  0001 C CNN
-F 1 "GND" V 9205 3222 50  0000 R CNN
+F 1 "GND" V 9200 3200 50  0000 R CNN
 F 2 "" H 9200 3350 50  0001 C CNN
 F 3 "" H 9200 3350 50  0001 C CNN
 	1    9200 3350
@@ -1070,22 +1070,22 @@ Wire Wire Line
 Connection ~ 5850 1400
 Wire Wire Line
 	5850 1400 5750 1400
-Text GLabel 10400 900  2    51   Input ~ 0
-GPIO_0
-Text GLabel 9250 900  0    51   Input ~ 0
-GPIO_1
-Text GLabel 10400 1000 2    51   Input ~ 0
-GPIO_2
-Text GLabel 9250 1000 0    51   Input ~ 0
-GPIO_3
-Text GLabel 10400 1100 2    51   Input ~ 0
-GPIO_4
-Text GLabel 9250 1100 0    51   Input ~ 0
-GPIO_5
-Text GLabel 10400 1200 2    51   Input ~ 0
+Text GLabel 10450 2950 2    51   Input ~ 0
 GPIO_6
-Text GLabel 9250 1200 0    51   Input ~ 0
+Text GLabel 9150 2950 0    51   Input ~ 0
 GPIO_7
+Text GLabel 10450 3050 2    51   Input ~ 0
+GPIO_4
+Text GLabel 9150 3050 0    51   Input ~ 0
+GPIO_5
+Text GLabel 10450 3150 2    51   Input ~ 0
+GPIO_2
+Text GLabel 9150 3150 0    51   Input ~ 0
+GPIO_3
+Text GLabel 10450 3250 2    51   Input ~ 0
+GPIO_0
+Text GLabel 9150 3250 0    51   Input ~ 0
+GPIO_1
 Wire Wire Line
 	9250 900  9550 900 
 Wire Wire Line
@@ -1186,4 +1186,20 @@ F 3 "" H 8600 5350 50  0001 C CNN
 	1    8600 5350
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9150 3250 9550 3250
+Wire Wire Line
+	9550 3150 9150 3150
+Wire Wire Line
+	9150 3050 9550 3050
+Wire Wire Line
+	9550 2950 9150 2950
+Wire Wire Line
+	10050 3250 10450 3250
+Wire Wire Line
+	10050 3150 10450 3150
+Wire Wire Line
+	10050 3050 10450 3050
+Wire Wire Line
+	10050 2950 10450 2950
 $EndSCHEMATC
