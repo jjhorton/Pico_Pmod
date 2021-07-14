@@ -1352,4 +1352,36 @@ Wire Wire Line
 	1600 1100 1400 1100
 Wire Notes Line
 	3100 500  3100 7800
+Text GLabel 10450 2250 2    50   Input ~ 0
+GPIO_8
+Text GLabel 10450 2150 2    50   Input ~ 0
+GPIO_10
+Text GLabel 10450 2050 2    50   Input ~ 0
+GPIO_12
+Text GLabel 10450 1950 2    50   Input ~ 0
+GPIO_14
+Wire Wire Line
+	10450 2250 10050 2250
+Wire Wire Line
+	10050 2150 10450 2150
+Wire Wire Line
+	10450 2050 10050 2050
+Wire Wire Line
+	10050 1950 10450 1950
+Text GLabel 9200 2250 0    50   Input ~ 0
+GPIO_9
+Text GLabel 9200 2150 0    50   Input ~ 0
+GPIO_11
+Text GLabel 9200 2050 0    50   Input ~ 0
+GPIO_13
+Text GLabel 9200 1950 0    50   Input ~ 0
+GPIO_15
+Wire Wire Line
+	9200 2250 9550 2250
+Wire Wire Line
+	9550 2150 9200 2150
+Wire Wire Line
+	9200 2050 9550 2050
+Wire Wire Line
+	9550 1950 9200 1950
 $EndSCHEMATC
