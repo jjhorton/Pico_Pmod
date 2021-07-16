@@ -20,10 +20,6 @@ global:
   # We want the revision added to the names for this project
   output: '%f-%i_%r.%x'
 
-lobal:
-  # We want the revision added to the names for this project
-  output: '%f-%i_%r.%x'
-
 filters:
  - name: 'exclude_any'
    type: 'generic'
