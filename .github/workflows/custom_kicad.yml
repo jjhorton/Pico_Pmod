@@ -1,4 +1,4 @@
-name: "KiCad CI/CD for Host"
+name: "KiCad CI/CD for RP2040 PMod Board"
 
 on:
   push:
