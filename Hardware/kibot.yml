@@ -15,19 +15,14 @@ preflight:
   - filter: 'USB-C ignore pad Sa'
     error: '19'
     regex:  'Pad of J4'
-    
+
 global:
   # We want the revision added to the names for this project
   output: '%f-%i_%r.%x'
 
-#import:
-#  - ../configs/Elecrow.kibot.yaml
-#  - ../configs/FusionPCB.kibot.yaml
-#  - ../configs/JLCPCB.kibot.yaml
-#  - ../configs/P-Ban.kibot.yaml
-#  - ../configs/PCBWay.kibot.yaml
-
-
+lobal:
+  # We want the revision added to the names for this project
+  output: '%f-%i_%r.%x'
 
 filters:
  - name: 'exclude_any'
@@ -112,88 +107,6 @@ outputs:
       <<: *bom_options
       format: CSV
 
-  - name: 'gerbers'
-    comment: "Gerbers for the board house"
-    type: gerber
-    dir: Gerbers
-    options:
-      # generic layer options
-      exclude_edge_layer: true
-      exclude_pads_from_silkscreen: false
-      use_aux_axis_as_origin: false
-      plot_sheet_reference: false
-      plot_footprint_refs: true
-      plot_footprint_values: true
-      force_plot_invisible_refs_vals: false
-      tent_vias: true
-
-      # gerber options
-      line_width: 0.1
-      subtract_mask_from_silk: false
-      use_protel_extensions: false
-      gerber_precision: 4.6
-      create_gerber_job_file: true
-      use_gerber_x2_attributes: true
-      use_gerber_net_attributes: true
-
-    layers:
-      - layer: F.Cu
-        suffix: F_Cu
-      - layer: B.Cu
-        suffix: B_Cu
-      - layer: F.Paste
-        suffix: F_Paste
-      - layer: B.Paste
-        suffix: B_Paste
-      - layer: F.SilkS
-        suffix: F_SilkS
-      - layer: B.SilkS
-        suffix: B_SilkS
-      - layer: F.Mask
-        suffix: F_Mask
-      - layer: B.Mask
-        suffix: B_Mask
-      - layer: Dwgs.User
-        suffix: Dwgs_User
-      - layer: Edge.Cuts
-        suffix: Edge_Cuts
-      - layer: F.Fab
-        suffix: F_Fab
-      - layer: B.Fab
-        suffix: B_Fab
-
-  - name: excellon_drill
-    comment: "Excellon drill files"
-    type: excellon
-    dir: Drill
-    options:
-      metric_units: false
-      pth_and_npth_single_file: false
-      use_aux_axis_as_origin: false
-      minimal_header: false
-      mirror_y_axis: false
-      report:
-        filename: 'spora_io-drl.rpt'
-      map:
-        type: 'pdf'
-
-  - name: gerber_drills
-    comment: "Gerber drill files"
-    type: gerb_drill
-    dir: Drill
-    options:
-      use_aux_axis_as_origin: false
-
-  - name: 'position'
-    comment: "Pick and place file"
-    type: position
-    dir: Position
-    options:
-      format: ASCII   # CSV or ASCII format
-      units: millimeters  # millimeters or inches
-      separate_files_for_front_and_back: true
-      only_smd: true
-
   - name: JLCPCB_gerbers
     comment: Gerbers compatible with JLCPCB
     type: gerber
@@ -252,3 +165,16 @@ outputs:
           dest: /
         - from_output: JLCPCB_drill
           dest: /
+
+  - name: 3D
+    comment: "STEP 3D model"
+    type: step
+    dir: 3D
+
+  - name: board_top
+    comment: "Top layer view"
+    type: pcbdraw
+    dir: PCB
+    options:
+      format: jpg
+      dpi: 300
