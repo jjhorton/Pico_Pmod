@@ -1624,4 +1624,7 @@ Text Notes 10450 3900 0    79   ~ 0
 Power LED
 Wire Notes Line
 	10300 5100 10300 3750
+NoConn ~ 6950 4900
+NoConn ~ 1900 7050
+NoConn ~ 1900 7150
 $EndSCHEMATC
