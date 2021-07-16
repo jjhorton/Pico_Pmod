@@ -1384,4 +1384,20 @@ Wire Wire Line
 	9200 2050 9550 2050
 Wire Wire Line
 	9550 1950 9200 1950
+Text GLabel 10400 1200 2    50   Input ~ 0
+GPIO_16
+Text GLabel 10400 1100 2    50   Input ~ 0
+GPIO_18
+Text GLabel 10400 1000 2    50   Input ~ 0
+GPIO_20
+Text GLabel 10400 900  2    50   Input ~ 0
+GPIO_22
+Text GLabel 9250 900  0    50   Input ~ 0
+GPIO_23
+Text GLabel 9250 1000 0    50   Input ~ 0
+GPIO_21
+Text GLabel 9250 1100 0    50   Input ~ 0
+GPIO_19
+Text GLabel 9250 1200 0    50   Input ~ 0
+GPIO_17
 $EndSCHEMATC
