@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 24)
-    (tracks 781)
+    (tracks 783)
     (zones 0)
     (modules 44)
     (nets 59)
@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -57,8 +57,8 @@
     (mod_edge_width 0.12)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 1.524 1.524)
-    (pad_drill 0.762)
+    (pad_size 1.4 1.4)
+    (pad_drill 1.1)
     (pad_to_mask_clearance 0)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
@@ -1061,7 +1061,7 @@
     )
   )
 
-  (module Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles (layer F.Cu) (tedit 5A142044) (tstamp 60ED279A)
+  (module Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A_CircularHoles (layer F.Cu) (tedit 60F1B09E) (tstamp 60ED279A)
     (at 127.4 78.8 270)
     (descr "USB TYPE C, RA RCPT PCB, SMT, https://www.amphenolcanada.com/StockAvailabilityPrice.aspx?From=&PartNum=12401610E4%7e2A")
     (tags "USB C Type-C Receptacle SMD")
@@ -2489,6 +2489,8 @@
   (segment (start 155.25001 75.34999) (end 155.25001 71.90001) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 155 75.6) (end 155.25001 75.34999) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 154.525 75.6) (end 155 75.6) (width 0.15) (layer F.Cu) (net 2))
+  (segment (start 143.175 71.175) (end 144 70.35) (width 0.15) (layer F.Cu) (net 2))
+  (segment (start 141.675 71.175) (end 143.175 71.175) (width 0.15) (layer F.Cu) (net 2))
   (segment (start 160.75 67.75) (end 160.7 67.7) (width 0.3) (layer F.Cu) (net 3))
   (segment (start 162.7 67.75) (end 160.75 67.75) (width 0.3) (layer F.Cu) (net 3))
   (segment (start 159.85 67.7) (end 160.7 67.7) (width 0.15) (layer F.Cu) (net 3))
