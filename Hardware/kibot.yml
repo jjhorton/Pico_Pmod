@@ -8,6 +8,14 @@ preflight:
   check_zone_fills: false
   ignore_unconnected: false
 
+  filters:
+  - filter: 'USB-C ignore pad Sa'
+    error: '19'
+    regex:  'Pad S1 of J4'
+  - filter: 'USB-C ignore pad Sa'
+    error: '19'
+    regex:  'Pad of J4'
+    
 global:
   # We want the revision added to the names for this project
   output: '%f-%i_%r.%x'
