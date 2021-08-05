@@ -325,7 +325,7 @@ $EndComp
 Text GLabel 2400 6750 2    51   Input ~ 0
 USB_DP
 Text GLabel 2400 6450 2    51   Input ~ 0
-USB_DN
+USB_DM
 Wire Wire Line
 	1900 6450 2150 6450
 Wire Wire Line
@@ -531,9 +531,9 @@ Wire Wire Line
 Wire Wire Line
 	7100 1750 7250 1750
 Text GLabel 7700 1900 2    51   Input ~ 0
-USB_DP
+USB_DM
 Text GLabel 7700 1750 2    51   Input ~ 0
-USB_DN
+USB_DP
 Wire Wire Line
 	7700 1750 7550 1750
 Wire Wire Line
