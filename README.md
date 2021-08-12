@@ -12,21 +12,16 @@ this hosts the accessories such as an [Seven Segment display]() or
 [PMOD buttons](). This allows me to work with boards I already have For
 my FPGA development boards, and connect them up to the Pico.
 
-My second board is for the opposite, connecting up the Raspberry Pi pico
-upto my FPGA boards, this is essentially a rotated PMod Connector, which isn't
-strictly required, but I decided it was useful to have a separate board for each
-depending on what I was trying to do.
+The second board is designed to use the RP2040 chip directly, and create a small form factor PMod Board, this will use the RP2040 reference design, with a USB-C (2.0) Port, and 3 PMod Connectors that allow for PMod Devices to be connected up to the RP2040. 
 
 # Software
 
 ## Host Example Software
 These are some examples that I have written to make use of the Host board with
-my existing PMod accessories that I have arround.
+my existing PMod accessories that I have around.
 
-### Seven Segment display
+## Seven Segment display
 
-### Input and Output example
-
-## Client Example Software
+## Input and Output example
 
 # Licensing
