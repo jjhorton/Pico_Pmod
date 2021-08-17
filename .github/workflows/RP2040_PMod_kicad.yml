@@ -3,14 +3,14 @@ name: "KiCad CI/CD for RP2040 PMod Board"
 on:
   push:
     paths:
-      - 'Hardware/Custom/*.sch'
-      - 'Hardware/Custom/*.kicad_pcb'
+      - 'Hardware/RP2040_PMod/*.sch'
+      - 'Hardware/RP2040_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
       - '.github/workflows/custom_kicad.yml'
   pull_request:
     paths:
-      - 'Hardware/Custom/*.sch'
-      - 'Hardware/Custom/*.kicad_pcb'
+      - 'Hardware/RP2040_PMod/*.sch'
+      - 'Hardware/RP2040_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
       - '.github/workflows/Custom_kicad.yml'
 
@@ -27,9 +27,9 @@ jobs:
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
-        schema: 'Hardware/Custom/pico_pmod.sch'
+        schema: 'Hardware/RP2040_PMod/pico_pmod.sch'
         # optional - PCB design file
-        board: 'Hardware/Custom/pico_pmod.kicad_pcb'
+        board: 'Hardware/RP2040_PMod/pico_pmod.kicad_pcb'
 
     - name: Retrieve results
       if: ${{ always() }}
