@@ -3,16 +3,16 @@ name: "KiCad CI/CD for Host"
 on:
   push:
     paths:
-      - 'Hardware/Host/*.sch'
-      - 'Hardware/Host/*.kicad_pcb'
+      - 'Hardware/Pico_PMod/*.sch'
+      - 'Hardware/Pico_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/host_kicad.yml'
+      - '.github/workflows/Pico_PMod_kicad.yml'
   pull_request:
     paths:
-      - 'Hardware/Host/*.sch'
-      - 'Hardware/Host/*.kicad_pcb'
+      - 'Hardware/Pico_PMod/*.sch'
+      - 'Hardware/Pico_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/host_kicad.yml'
+      - '.github/workflows/Pico_PMod_kicad.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,9 +27,9 @@ jobs:
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
-        schema: 'Hardware/Host/pico_pmod_host.sch'
+        schema: 'Hardware/Pico_PMod/pico_pmod_host.sch'
         # optional - PCB design file
-        board: 'Hardware/Host/pico_pmod_host.kicad_pcb'
+        board: 'Hardware/Pico_PMod/pico_pmod_host.kicad_pcb'
 
     - name: Retrieve results
       if: ${{ always() }}
