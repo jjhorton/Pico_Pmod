@@ -9,8 +9,8 @@ PMod connector.
 
 | Board | Build Status | Description |
 | --- | --- | --- |
-| Pico PMod | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/host_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/host_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
-| RP2040 PMod | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/custom_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/custom_kicad.yml) | A PMod Board based on the RP2040 Chip |
+| Pico PMod | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
+| RP2040 PMod | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml) | A PMod Board based on the RP2040 Chip |
 
 For working with the pre existing PMod Boards I've made a PMod Host board,
 this hosts the accessories such as an [Seven Segment display]() or
