@@ -6,13 +6,13 @@ on:
       - 'Hardware/RP2040_PMod/*.sch'
       - 'Hardware/RP2040_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/custom_kicad.yml'
+      - '.github/workflows/RP2040_PMod_kicad.yml'
   pull_request:
     paths:
       - 'Hardware/RP2040_PMod/*.sch'
       - 'Hardware/RP2040_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/Custom_kicad.yml'
+      - '.github/workflows/RP2040_PMod_kicad.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
