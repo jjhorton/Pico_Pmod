@@ -1,7 +1,6 @@
 /**
- * Copyright (c) 2021 James Horton
- *
- *
+ * Copyright (c) 2021 James Horton.
+ * SPDX-License-Identifier: BSD-3-Clause
  */
 
 #include "pico/stdlib.h"
