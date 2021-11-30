@@ -8,8 +8,8 @@ Title "PMOD for Raspberry Pi Pico"
 Date "2021-11-30"
 Rev "v0.1"
 Comp "James Horton"
-Comment1 "an Extended PMOD connection to connect to a Pico Board"
-Comment2 "This board is designed for use with a colorlight i5 board, using"
+Comment1 "with an Raspberry Pi Pico Board."
+Comment2 "This board is designed for allowing the use of PMod modules"
 Comment3 ""
 Comment4 "Licensed Under CERN Open Hardware Licence Version 2 - Permissive"
 $EndDescr
@@ -22,7 +22,7 @@ F 1 "Pico" H 2350 3524 50  0000 C CNN
 F 2 "RPi_Pico:RPi_Pico_SMD_TH" V 2350 2400 50  0001 C CNN
 F 3 "" H 2350 2400 50  0001 C CNN
 	1    2350 2400
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x15_Odd_Even J1
@@ -33,7 +33,7 @@ F 1 "Conn_02x15_Odd_Even" H 6250 2976 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 6200 2150 50  0001 C CNN
 F 3 "~" H 6200 2150 50  0001 C CNN
 	1    6200 2150
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L power:GND #PWR0101
@@ -44,7 +44,7 @@ F 1 "GND" V 6805 2622 50  0000 R CNN
 F 2 "" H 6800 2750 50  0001 C CNN
 F 3 "" H 6800 2750 50  0001 C CNN
 	1    6800 2750
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:+3.3V #PWR0102
@@ -55,7 +55,7 @@ F 1 "+3.3V" V 6815 2978 50  0000 L CNN
 F 2 "" H 6800 2850 50  0001 C CNN
 F 3 "" H 6800 2850 50  0001 C CNN
 	1    6800 2850
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -66,7 +66,7 @@ F 1 "GND" V 5655 2622 50  0000 R CNN
 F 2 "" H 5650 2750 50  0001 C CNN
 F 3 "" H 5650 2750 50  0001 C CNN
 	1    5650 2750
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:+3.3V #PWR0104
@@ -77,7 +77,7 @@ F 1 "+3.3V" V 5665 2978 50  0000 L CNN
 F 2 "" H 5650 2850 50  0001 C CNN
 F 3 "" H 5650 2850 50  0001 C CNN
 	1    5650 2850
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:GND #PWR0105
@@ -88,7 +88,7 @@ F 1 "GND" V 5655 1722 50  0000 R CNN
 F 2 "" H 5650 1850 50  0001 C CNN
 F 3 "" H 5650 1850 50  0001 C CNN
 	1    5650 1850
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:+3.3V #PWR0106
@@ -99,7 +99,7 @@ F 1 "+3.3V" V 5665 2078 50  0000 L CNN
 F 2 "" H 5650 1950 50  0001 C CNN
 F 3 "" H 5650 1950 50  0001 C CNN
 	1    5650 1950
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:GND #PWR0107
@@ -110,7 +110,7 @@ F 1 "GND" V 6805 1722 50  0000 R CNN
 F 2 "" H 6800 1850 50  0001 C CNN
 F 3 "" H 6800 1850 50  0001 C CNN
 	1    6800 1850
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:+3.3V #PWR0108
@@ -121,7 +121,7 @@ F 1 "+3.3V" V 6815 2078 50  0000 L CNN
 F 2 "" H 6800 1950 50  0001 C CNN
 F 3 "" H 6800 1950 50  0001 C CNN
 	1    6800 1950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:+5V #PWR0109
@@ -132,7 +132,7 @@ F 1 "+5V" V 5665 2278 50  0000 L CNN
 F 2 "" H 5650 2150 50  0001 C CNN
 F 3 "" H 5650 2150 50  0001 C CNN
 	1    5650 2150
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:GND #PWR0110
@@ -143,7 +143,7 @@ F 1 "GND" V 1455 1522 50  0000 R CNN
 F 2 "" H 1450 1650 50  0001 C CNN
 F 3 "" H 1450 1650 50  0001 C CNN
 	1    1450 1650
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR0111
@@ -154,7 +154,7 @@ F 1 "GND" V 1455 2022 50  0000 R CNN
 F 2 "" H 1450 2150 50  0001 C CNN
 F 3 "" H 1450 2150 50  0001 C CNN
 	1    1450 2150
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR0112
@@ -165,7 +165,7 @@ F 1 "GND" V 1455 2522 50  0000 R CNN
 F 2 "" H 1450 2650 50  0001 C CNN
 F 3 "" H 1450 2650 50  0001 C CNN
 	1    1450 2650
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR0113
@@ -176,7 +176,7 @@ F 1 "GND" V 1455 3022 50  0000 R CNN
 F 2 "" H 1450 3150 50  0001 C CNN
 F 3 "" H 1450 3150 50  0001 C CNN
 	1    1450 3150
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L power:GND #PWR0114
@@ -187,7 +187,7 @@ F 1 "GND" V 3205 3022 50  0000 R CNN
 F 2 "" H 3200 3150 50  0001 C CNN
 F 3 "" H 3200 3150 50  0001 C CNN
 	1    3200 3150
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:GND #PWR0115
@@ -198,7 +198,7 @@ F 1 "GND" V 3205 2522 50  0000 R CNN
 F 2 "" H 3200 2650 50  0001 C CNN
 F 3 "" H 3200 2650 50  0001 C CNN
 	1    3200 2650
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L power:GND #PWR0116
@@ -209,7 +209,7 @@ F 1 "GND" V 3255 1522 50  0000 R CNN
 F 2 "" H 3250 1650 50  0001 C CNN
 F 3 "" H 3250 1650 50  0001 C CNN
 	1    3250 1650
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	6800 2850 6500 2850
@@ -240,7 +240,7 @@ F 1 "GND" V 2355 3522 50  0000 R CNN
 F 2 "" H 2350 3650 50  0001 C CNN
 F 3 "" H 2350 3650 50  0001 C CNN
 	1    2350 3650
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	1650 1650 1450 1650
@@ -267,7 +267,7 @@ F 1 "GND" V 6805 2022 50  0000 R CNN
 F 2 "" H 6800 2150 50  0001 C CNN
 F 3 "" H 6800 2150 50  0001 C CNN
 	1    6800 2150
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	5650 2150 6000 2150
@@ -380,7 +380,7 @@ F 1 "Conn_01x02" V 9150 4850 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9150 5100 50  0001 C CNN
 F 3 "~" H 9150 5100 50  0001 C CNN
 	1    9150 5100
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
@@ -391,7 +391,7 @@ F 1 "Conn_01x02" V 6250 4800 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 5050 50  0001 C CNN
 F 3 "~" H 6250 5050 50  0001 C CNN
 	1    6250 5050
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Text GLabel 3300 1450 2    50   Input ~ 0
 Pico_VBUS
@@ -422,7 +422,7 @@ F 1 "Conn_01x03" V 2400 6350 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2400 6600 50  0001 C CNN
 F 3 "~" H 2400 6600 50  0001 C CNN
 	1    2400 6600
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -433,7 +433,7 @@ F 1 "Conn_01x02" V 2250 4850 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2250 5100 50  0001 C CNN
 F 3 "~" H 2250 5100 50  0001 C CNN
 	1    2250 5100
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	2500 5300 2350 5300
@@ -524,7 +524,7 @@ F 1 "+5V" V 2065 6928 50  0000 L CNN
 F 2 "" H 2050 6800 50  0001 C CNN
 F 3 "" H 2050 6800 50  0001 C CNN
 	1    2050 6800
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Text Notes 1700 5550 0    50   ~ 0
 Direct input from the \nMicro USB connector approx 5v
@@ -543,7 +543,7 @@ F 1 "+3.3V" V 2715 6928 50  0000 L CNN
 F 2 "" H 2700 6800 50  0001 C CNN
 F 3 "" H 2700 6800 50  0001 C CNN
 	1    2700 6800
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	2500 6800 2700 6800
@@ -558,7 +558,7 @@ F 1 "+5V" V 2115 5428 50  0000 L CNN
 F 2 "" H 2100 5300 50  0001 C CNN
 F 3 "" H 2100 5300 50  0001 C CNN
 	1    2100 5300
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	2250 5300 2100 5300
@@ -571,7 +571,7 @@ F 1 "+3.3V" V 6165 5378 50  0000 L CNN
 F 2 "" H 6150 5250 50  0001 C CNN
 F 3 "" H 6150 5250 50  0001 C CNN
 	1    6150 5250
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 Wire Wire Line
 	6150 5250 6250 5250
@@ -584,7 +584,7 @@ F 1 "GND" V 9005 5172 50  0000 R CNN
 F 2 "" H 9000 5300 50  0001 C CNN
 F 3 "" H 9000 5300 50  0001 C CNN
 	1    9000 5300
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	9150 5300 9000 5300
@@ -601,7 +601,7 @@ F 1 "Conn_01x05" H 10200 950 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10050 1350 50  0001 C CNN
 F 3 "~" H 10050 1350 50  0001 C CNN
 	1    10050 1350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 9700 1150 0    50   Input ~ 0
 ADC_VREF
@@ -668,7 +668,7 @@ F 1 "SW_Push" H 9700 3794 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 9700 3800 50  0001 C CNN
 F 3 "~" H 9700 3800 50  0001 C CNN
 	1    9700 3600
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text GLabel 10200 3600 2    50   Input ~ 0
 Pico_Run
@@ -681,7 +681,7 @@ F 1 "GND" V 9105 3472 50  0000 R CNN
 F 2 "" H 9100 3600 50  0001 C CNN
 F 3 "" H 9100 3600 50  0001 C CNN
 	1    9100 3600
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 Wire Wire Line
 	9100 3600 9500 3600
