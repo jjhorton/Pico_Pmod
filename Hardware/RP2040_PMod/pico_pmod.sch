@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "PMOD for Raspberry Pi Pico"
+Title "PMOD for Raspberry Pi RP2040"
 Date "2021-11-30"
 Rev "v0.1"
 Comp "James Horton"
