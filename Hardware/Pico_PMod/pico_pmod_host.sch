@@ -5,13 +5,13 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PMOD for Raspberry Pi Pico"
-Date "2021-04-21"
+Date "2021-11-30"
 Rev "v0.1"
 Comp "James Horton"
 Comment1 "an Extended PMOD connection to connect to a Pico Board"
 Comment2 "This board is designed for use with a colorlight i5 board, using"
 Comment3 ""
-Comment4 ""
+Comment4 "Licensed Under CERN Open Hardware Licence Version 2 - Permissive"
 $EndDescr
 $Comp
 L RaspberryPi:Pico U1
