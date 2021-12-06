@@ -1,9 +1,7 @@
 The aim of this repo is to have a PCB on which I was able to mount a standard
-[Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/)
-and have an extended duel PMod Connector. This would allow me to connect up
-the Raspberry Pi Pico upto a range of PMod Boards that I already own, as well
-as to connect it upto some of the FPGA boards that I already own though there
-PMod connector.
+[Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) and have an extended duel PMod Connector. This would allow me to connect up the Raspberry Pi Pico upto a range of PMod Boards that I already own, as well as to connect it upto some of the FPGA boards that I already own though there PMod connector.
+
+The second Board that is contained in these repo, extends this principle to use the RP2040 chip directly instead of the Pico, and provide 3 standard PMod in a smaller form factor.
 
 # Hardware
 
@@ -24,4 +22,4 @@ The second board is designed to use the RP2040 chip directly, and create a small
 These are some examples that I have written to make use of the Host board with
 my existing PMod accessories that I have around, these are two examples from Mouser which can be purchased, they are a [Seven Segment Display]() and a [8 way switch](). These simple examples can be found in the Software Folder, are written in `C` and require the Pico SDK to be able to build them.
 
-These Software examples currently target only the board Pico Pmod Board, pins need to be changed for them to work with the RP2040 Board. 
+These Software examples currently target only the board Pico Pmod Board, pins need to be changed for them to work with the RP2040 Board.
