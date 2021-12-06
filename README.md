@@ -20,6 +20,6 @@ The second board is designed to use the RP2040 chip directly, and create a small
 # Software
 
 These are some examples that I have written to make use of the Host board with
-my existing PMod accessories that I have around, these are two examples from Mouser which can be purchased, they are a [Seven Segment Display]() and a [8 way switch](). These simple examples can be found in the Software Folder, are written in `C` and require the Pico SDK to be able to build them.
+my existing PMod accessories that I have around, these are two examples from Mouser which can be purchased, they are a [Seven Segment Display](https://www.mouser.co.uk/ProductDetail/1BitSquared/CS-ICEBREAKER-08?qs=sGAEpiMZZMv0NwlthflBi6k4Sw3LFzcrCNwSdbFYKnA%3D) and a [8 way switch](https://www.mouser.co.uk/ProductDetail/1BitSquared/CS-ICEBREAKER-07?qs=Cb2nCFKsA8ouK5JTufn3Bg%3D%3D). These simple examples can be found in the Software Folder, are written in `C` and require the Pico SDK to be able to build them.
 
 These Software examples currently target only the board Pico Pmod Board, pins need to be changed for them to work with the RP2040 Board.
