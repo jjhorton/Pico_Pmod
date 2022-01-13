@@ -1,12 +1,6 @@
 name: "KiCad CI/CD for RP2040 PMod Board"
 
 on:
-  push:
-    paths:
-      - 'Hardware/RP2040_PMod/*.sch'
-      - 'Hardware/RP2040_PMod/*.kicad_pcb'
-      - 'Hardware/kibot.yml'
-      - '.github/workflows/RP2040_PMod_kicad.yml'
   pull_request:
     paths:
       - 'Hardware/RP2040_PMod/*.sch'
