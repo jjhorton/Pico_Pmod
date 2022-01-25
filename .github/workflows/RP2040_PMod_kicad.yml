@@ -61,7 +61,7 @@ jobs:
       - name: Run KiBot
         working-directory: project
         run: |
-          kibot -b 'Hardware/RP2040_PMod/pico_pmod.kicad_pcb' -e 'Hardware/RP2040_PMod/pico_pmod.sch' -d 'Hardware/Fabrication' -c 'Hardware/kibot.yaml' -v
+          kibot -b 'Hardware/RP2040_PMod/pico_pmod.kicad_pcb' -e 'Hardware/RP2040_PMod/pico_pmod.kicad_sch' -d 'Hardware/Fabrication' -c 'Hardware/kibot.yaml' -v
       - name: Retrieve results
         if: ${{ always() }}
         uses: actions/upload-artifact@v2
