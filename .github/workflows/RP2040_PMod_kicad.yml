@@ -55,7 +55,6 @@ jobs:
       - name: Make directory
         working-directory: project
         run: |
-          mkdir Hardware
           mkdir Hardware/Fabrication
           mv Hardware/kibot.yml Hardware/kibot.yaml
           ls -lh
