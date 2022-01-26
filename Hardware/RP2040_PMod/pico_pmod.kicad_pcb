@@ -960,7 +960,7 @@
       (net 1 "GND") (tstamp dc0df782-a446-4364-8dc7-0190637b5f77))
     (pad "57" thru_hole circle locked (at -1.275 0 90) (size 0.6 0.6) (drill 0.35) (layers *.Cu)
       (net 1 "GND") (tstamp f2a44eaf-666f-422c-bb4d-a717499c3d1a))
-    (model "/home/jjh/Documents/pico-blender/rp2040.wrl"
+    (model "${JJH}/SamacSys_Parts.3dshapes/rp2040.wrl"
       (offset (xyz 0 0 -1))
       (scale (xyz 0.37 0.37 0.37))
       (rotate (xyz 0 0 0))
@@ -1374,7 +1374,7 @@
       (net 1 "GND") (tstamp cd37382e-84e0-4ff6-943b-f74274c068f7))
     (pad "S1" thru_hole circle locked (at 4.13 -3.11 270) (size 1.4 1.4) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 "GND") (tstamp e42e0e06-eb0c-48b7-ab87-41d2b5518c5a))
-    (model "/home/jjh/Documents/pico-blender/shapes3D/12401548E4#2A--3DModel-STEP-56544.wrl"
+    (model "${JJH}/SamacSys_Parts.3dshapes/12401548E4#2A--3DModel-STEP-56544.STEP"
       (offset (xyz 0 -5.25 1.6))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
