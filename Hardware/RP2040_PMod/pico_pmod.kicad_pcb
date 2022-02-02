@@ -54,7 +54,7 @@
     )
     (pad_to_mask_clearance 0)
     (pcbplotparams
-      (layerselection 0x00010fc_ffffffff)
+      (layerselection 0x0001030_7ffffffe)
       (disableapertmacros false)
       (usegerberextensions false)
       (usegerberattributes true)
@@ -71,7 +71,7 @@
       (hpglpenspeed 20)
       (hpglpendiameter 15.000000)
       (dxfpolygonmode true)
-      (dxfimperialunits true)
+      (dxfimperialunits false)
       (dxfusepcbnewfont true)
       (psnegative false)
       (psa4output false)
@@ -80,11 +80,11 @@
       (plotinvisibletext false)
       (sketchpadsonfab false)
       (subtractmaskfromsilk false)
-      (outputformat 1)
+      (outputformat 3)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "silkscreen/")
     )
   )
 
@@ -961,8 +961,8 @@
     (pad "57" thru_hole circle locked (at -1.275 0 90) (size 0.6 0.6) (drill 0.35) (layers *.Cu)
       (net 1 "GND") (tstamp f2a44eaf-666f-422c-bb4d-a717499c3d1a))
     (model "${JJH}/SamacSys_Parts.3dshapes/rp2040.wrl"
-      (offset (xyz 0 0 -1))
-      (scale (xyz 0.37 0.37 0.37))
+      (offset (xyz 0 0 0))
+      (scale (xyz 0.92 0.92 0.92))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1474,7 +1474,7 @@
       (net 46 "QSPI_SD3") (tstamp c4759c8c-660b-451c-9ce4-1315c0e274d8))
     (pad "8" smd roundrect locked (at 3.6 -1.905 180) (size 1.6 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 2 "+3V3") (tstamp ae944667-42b2-4982-b030-0409ac819ee8))
-    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.275x5.275mm_P1.27mm.step"
+    (model "${JJH}/SamacSys_Parts.3dshapes/SOIC_8_5275x5275mm_P127mm_sp_winbond.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
