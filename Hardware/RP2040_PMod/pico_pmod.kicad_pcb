@@ -962,7 +962,7 @@
       (net 1 "GND") (tstamp f2a44eaf-666f-422c-bb4d-a717499c3d1a))
     (model "${JJH}/SamacSys_Parts.3dshapes/rp2040.wrl"
       (offset (xyz 0 0 0))
-      (scale (xyz 0.92 0.92 0.92))
+      (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
