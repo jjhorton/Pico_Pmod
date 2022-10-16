@@ -5,7 +5,7 @@ on:
     - cron: "0 8 * * 1"
   pull_request:
     paths:
-      - 'Hardware/RP2040_PMod/*.sch'
+      - 'Hardware/RP2040_PMod/*.kicad_sch'
       - 'Hardware/RP2040_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
       - '.github/workflows/RP2040_PMod_kicad.yml'
