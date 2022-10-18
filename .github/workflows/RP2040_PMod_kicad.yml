@@ -20,7 +20,7 @@ jobs:
       with:
         additional_args: "" 
         # Required - kibot config file
-        config: kibot.yml
+        config: Hardware/kibot.yml
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
