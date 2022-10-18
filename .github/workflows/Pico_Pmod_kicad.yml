@@ -8,7 +8,7 @@ on:
       - 'Hardware/Pico_PMod/*.sch'
       - 'Hardware/Pico_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/Pico_PMod_kicad.yml'
+      - '.github/workflows/Pico_Pmod_kicad.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: INTI-CMNB/KiBot@v1
+    - uses: INTI-CMNB/KiBot@v2
       with:
         # Required - kibot config file
         config: Hardware/kibot.yml
