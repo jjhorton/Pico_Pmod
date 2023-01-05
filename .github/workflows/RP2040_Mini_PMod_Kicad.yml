@@ -1,0 +1,37 @@
+name: "KiCad Testing for RP2040 Mini PMod"
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  pull_request:
+    paths:
+      - 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_sch'
+      - 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb'
+      - 'Hardware/kibot.yml'
+      - '.github/workflows/RP2040_Mini_PMod_kicad.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Fabrication:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        # Required - kibot config file
+        config: Hardware/kibot.yml
+        # optional - prefix to output defined in config
+        dir: Hardware/Fabrication
+        # optional - schematic file
+        schema: 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_sch'
+        # optional - PCB design file
+        board: 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb'
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: Fabrication_Files
+        path: |
+          Hardware/Fabrication/
+        if-no-files-found: warn
