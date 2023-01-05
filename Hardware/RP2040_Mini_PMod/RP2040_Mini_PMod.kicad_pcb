@@ -432,9 +432,14 @@
       (net 2 "GND") (pinfunction "GND") (pintype "power_in") (tstamp cc2365cb-cf24-4019-8f82-b215a1acf225))
     (pad "57" thru_hole circle locked (at -1.275 1.275 90) (size 0.6 0.6) (drill 0.35) (layers *.Cu)
       (net 2 "GND") (pinfunction "GND") (pintype "power_in") (tstamp f402543b-7690-4c13-b2fc-4344aa9b9191))
-    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-56-1EP_7x7mm_P0.4mm_EP5.6x5.6mm.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model "${JJH}/SamacSys_Parts.3dshapes/rp2040.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 0.9 0.9 0.9))
       (rotate (xyz 0 0 0))
     )
   )
@@ -631,6 +636,11 @@
       (net 58 "Net-(D1-Pad3)") (pinfunction "GK") (pintype "passive") (tstamp 57f2e85e-796e-4898-a080-e436710ce290))
     (pad "4" smd roundrect (at -0.425 -0.425 270) (size 0.45 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.05)
       (net 59 "Net-(D1-Pad4)") (pinfunction "BK") (pintype "passive") (tstamp 2dc3f13d-629a-434a-bc27-99eb326672d0))
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm.wrl"
+      (offset (xyz 0 -0 0))
+      (scale (xyz 0.22 0.22 0.22))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
@@ -1182,6 +1192,11 @@
       (net 60 "Net-(D2-Pad3)") (pinfunction "GK") (pintype "passive") (tstamp 6b0e47d7-f663-4f1d-9464-4f07a28941c2))
     (pad "4" smd roundrect (at -0.425 -0.425 180) (size 0.45 0.45) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.05)
       (net 61 "Net-(D2-Pad4)") (pinfunction "BK") (pintype "passive") (tstamp 1a59a42e-afc4-4e58-a43b-17535c5787ac))
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 0.22 0.22 0.22))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
