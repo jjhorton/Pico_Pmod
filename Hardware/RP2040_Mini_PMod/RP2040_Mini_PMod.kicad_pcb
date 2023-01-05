@@ -252,7 +252,7 @@
       (net 65 "unconnected-(SW2-Pad3)") (pinfunction "K") (pintype "passive+no_connect") (tstamp d57793fc-ca87-4aa2-bf98-c9e3f6d9de51))
     (pad "4" smd rect (at 2.25 1.075 90) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 27 "Net-(R2-Pad2)") (pinfunction "A") (pintype "passive") (tstamp 16231bf9-7459-4501-8861-ce23f961c61a))
-    (model "E:\\kicad\\SamacSys_Parts.3dshapes\\PTS815_SJK_250_SMTR_LFS.stp"
+    (model "${JJH}/SamacSys_Parts.3dshapes/PTS815_SJK_250_SMTR_LFS.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -718,7 +718,12 @@
       (net 63 "unconnected-(SW1-Pad3)") (pinfunction "K") (pintype "passive+no_connect") (tstamp f2debba5-8af2-40b4-9a35-7a32a6067a20))
     (pad "4" smd rect (at 2.25 1.075 90) (size 0.7 1) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 32 "Pico_Run") (pinfunction "A") (pintype "passive") (tstamp 3240886e-e707-496e-a658-3b5f25a0c439))
-    (model "E:\\kicad\\SamacSys_Parts.3dshapes\\PTS815_SJK_250_SMTR_LFS.stp"
+    (model "${JJH}/SamacSys_Parts.3dshapes/PTS636_SM25F_SMTR_LFS.stp" hide
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
+    (model "${JJH}/SamacSys_Parts.3dshapes/PTS815_SJK_250_SMTR_LFS.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
