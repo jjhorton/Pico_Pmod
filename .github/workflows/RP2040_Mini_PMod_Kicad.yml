@@ -53,3 +53,40 @@ jobs:
         path: |
           Hardware/Fabrication/
         if-no-files-found: warn
+
+  Panel-PCB:
+    runs-on: ubuntu-latest
+    depends-on: Fabrication
+    steps:
+    - name: Set outputs
+      run: |
+        sudo apt install kicad
+        pip3 install kikit
+
+    - name: Make a panel 
+      run: |
+        kikit panelize \
+          --layout 'grid; rows: 2; cols: 2; space: 2mm' \
+          --tabs 'fixed; width: 3mm; vcount: 2' \
+          --cuts 'mousebites; drill: 0.5mm; spacing: 1mm; offset: 0.2mm; prolong: 0.5mm' \
+          --framing 'railstb; width: 5mm; space: 3mm;' \
+          --post 'millradius: 1mm' \
+          Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb Hardware/RP2040_Mini_PMod/panel.kicad_pcb
+    
+    - uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        # Required - kibot config file
+        config: Hardware/kibot.yml
+        # optional - prefix to output defined in config
+        dir: Hardware/Fabrication
+        # optional - PCB design file
+        board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
+
+    - name: Retrieve results
+      if: ${{ always() }}
+      uses: actions/upload-artifact@v2
+      with:
+        name: Fabrication_Files
+        path: |
+          Hardware/Fabrication/
+        if-no-files-found: warn
