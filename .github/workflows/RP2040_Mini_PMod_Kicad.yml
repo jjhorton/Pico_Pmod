@@ -56,7 +56,7 @@ jobs:
 
   Panel-PCB:
     runs-on: ubuntu-latest
-    depends-on: Fabrication
+    needs: Fabrication
     steps:
     - name: Set outputs
       run: |
