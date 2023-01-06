@@ -97,6 +97,8 @@ jobs:
         config: Hardware/kibot.yml
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
+        # optional - schematic file
+        schema: 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_sch'
         # optional - PCB design file
         board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
 
