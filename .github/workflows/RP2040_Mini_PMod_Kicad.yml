@@ -69,6 +69,7 @@ jobs:
         else
           echo "::set-output name=sha_short::$(git rev-parse --short ${{ github.event.pull_request.head.sha }})"
         fi
+  
     - name: Set PCB version
       uses: jacobtomlinson/gha-find-replace@master
       with:
@@ -78,6 +79,9 @@ jobs:
     
     - name: Setup kicad and kikit
       run: |
+        sudo add-apt-repository --yes ppa:kicad/kicad-6.0-releases
+        sudo apt-get update
+        sudo apt-get install --yes --no-install-recommends kicad
         pip3 install kikit
 
     - name: Make a panel 
