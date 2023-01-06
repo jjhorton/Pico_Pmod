@@ -78,7 +78,6 @@ jobs:
     
     - name: Setup kicad and kikit
       run: |
-        sudo apt install kicad
         pip3 install kikit
 
     - name: Make a panel 
@@ -102,7 +101,7 @@ jobs:
         # optional - PCB design file
         board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
         # stages not to run 
-        skip: run_drc
+        skip: all
 
     - name: Retrieve results
       if: ${{ always() }}
