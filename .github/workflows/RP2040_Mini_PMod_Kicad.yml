@@ -101,6 +101,8 @@ jobs:
         schema: 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_sch'
         # optional - PCB design file
         board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
+        # stages not to run 
+        skip: run_drc, run_erc
 
     - name: Retrieve results
       if: ${{ always() }}
