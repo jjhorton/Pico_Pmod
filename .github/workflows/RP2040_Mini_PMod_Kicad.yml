@@ -88,8 +88,8 @@ jobs:
       run: |
         kikit panelize \
           --layout 'grid; rows: 3; cols: 2; space: 2mm' \
-          --tabs 'fixed; width: 3mm; vcount: 2; hcount: 0' \
-          --cuts 'mousebites; drill: 0.5mm; spacing: 1mm; offset: -0.2mm; prolong: 0.5mm' \
+          --tabs 'fixed; width: 4mm; vcount: 2; hcount: 0' \
+          --cuts 'mousebites; drill: 0.5mm; spacing: 1mm; offset: -0.2mm; prolong: 0.7mm' \
           --framing 'railstb; width: 5mm; space: 3mm;' \
           --post 'millradius: 1mm' \
           Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb Hardware/RP2040_Mini_PMod/panel.kicad_pcb
