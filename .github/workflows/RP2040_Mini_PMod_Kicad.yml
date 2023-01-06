@@ -29,7 +29,7 @@ jobs:
     - name: Set PCB version
       uses: jacobtomlinson/gha-find-replace@master
       with:
-        include: "PMod_GPS/Hardware/PMod_GPS.kicad_pcb"
+        include: "Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb"
         find: "%%GITHASH%%"
         replace: ${{ steps.vars.outputs.sha_short }}
 
