@@ -106,7 +106,7 @@ jobs:
         board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
         # stages not to run 
         skip: all
-        targets: ['interactive_bom','bom_html','JLCPCB','board_top']
+        targets: 'interactive_bom','bom_html','JLCPCB','board_top'
 
     - name: Retrieve results
       if: ${{ always() }}
