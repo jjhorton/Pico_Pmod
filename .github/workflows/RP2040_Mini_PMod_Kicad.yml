@@ -93,7 +93,7 @@ jobs:
           --framing 'railstb; width: 5mm; space: 3mm;' \
           --post 'millradius: 1mm' \
           --text 'simple; text: JLCJLCJLCJLC; anchor: mt; voffset: 2.5mm; hjustify: center; vjustify: center;' \
-          --text2 'simple; text: Created: {date}    Git Version: ${{ steps.vars.outputs.sha_short }}; anchor: mb; voffset: -2.5mm; hjustify: center; vjustify: center;' \
+          --text2 'simple; text: Created {date}    Git Version ${{ steps.vars.outputs.sha_short }}; anchor: mb; voffset: -2.5mm; hjustify: center; vjustify: center;' \
           Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb Hardware/RP2040_Mini_PMod/panel.kicad_pcb
     
     - uses: INTI-CMNB/KiBot@v2_k6
