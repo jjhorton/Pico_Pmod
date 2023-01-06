@@ -102,7 +102,7 @@ jobs:
         # optional - PCB design file
         board: 'Hardware/RP2040_Mini_PMod/panel.kicad_pcb'
         # stages not to run 
-        skip: run_drc, run_erc
+        skip: run_drc
 
     - name: Retrieve results
       if: ${{ always() }}
