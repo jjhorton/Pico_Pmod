@@ -1,7 +1,7 @@
 (kicad_pcb (version 20211014) (generator pcbnew)
 
   (general
-    (thickness 2.07)
+    (thickness 0.78)
   )
 
   (paper "A4")
@@ -45,11 +45,11 @@
       (layer "F.Paste" (type "Top Solder Paste"))
       (layer "F.Mask" (type "Top Solder Mask") (thickness 0.01))
       (layer "F.Cu" (type "copper") (thickness 0.035))
-      (layer "dielectric 1" (type "core") (thickness 0.2) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "dielectric 1" (type "core") (thickness 0.11) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "In1.Cu" (type "copper") (thickness 0.035))
-      (layer "dielectric 2" (type "prepreg") (thickness 1.51) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "dielectric 2" (type "prepreg") (thickness 0.4) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "In2.Cu" (type "copper") (thickness 0.035))
-      (layer "dielectric 3" (type "core") (thickness 0.2) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
+      (layer "dielectric 3" (type "core") (thickness 0.11) (material "FR4") (epsilon_r 4.5) (loss_tangent 0.02))
       (layer "B.Cu" (type "copper") (thickness 0.035))
       (layer "B.Mask" (type "Bottom Solder Mask") (thickness 0.01))
       (layer "B.Paste" (type "Bottom Solder Paste"))
@@ -2372,7 +2372,7 @@
   (dimension (type aligned) (layer "User.1") (tstamp 7eca0d4b-d442-4f9e-b081-cfed130b89b7)
     (pts (xy 138 109.9) (xy 138 114))
     (height 2.926982)
-    (gr_text "4.1000 mm" (at 133.273018 111.95 90) (layer "User.1") (tstamp da94873a-6780-4e3a-8267-395ff7addeda)
+    (gr_text "4.1000 mm" (at 133.273018 111.95 90) (layer "User.1") (tstamp 7eca0d4b-d442-4f9e-b081-cfed130b89b7)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (format (units 3) (units_format 1) (precision 4))
