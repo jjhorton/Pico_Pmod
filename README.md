@@ -1,7 +1,7 @@
 The aim of this repo is to have a PCB on which I was able to mount a standard
 [Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) and have an extended duel PMod Connector. This would allow me to connect up the Raspberry Pi Pico upto a range of PMod Boards that I already own, as well as to connect it upto some of the FPGA boards that I already own though there PMod connector.
 
-The second Board that is contained in these repo, extends this principle to use the RP2040 chip directly instead of the Pico, and provide 3 standard PMod in a smaller form factor.
+![All three PMod Boards](/Hardware/boards.jpg)
 
 # Hardware
 
