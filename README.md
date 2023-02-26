@@ -1,11 +1,7 @@
 The aim of this repo is to have a PCB on which I was able to mount a standard
 [Raspberry Pi Pico](https://www.raspberrypi.org/products/raspberry-pi-pico/) and have an extended duel PMod Connector. This would allow me to connect up the Raspberry Pi Pico upto a range of PMod Boards that I already own, as well as to connect it upto some of the FPGA boards that I already own though there PMod connector.
 
-|Pico Pmod | RP2040 PMod |
-|---|---|
-| ![Pico Pmod](Hardware/Pico_PMod/board.jpg) | ![RP2040 Pmod](Hardware/RP2040_PMod/board.jpg) |
-
-The second Board that is contained in these repo, extends this principle to use the RP2040 chip directly instead of the Pico, and provide 3 standard PMod in a smaller form factor.
+![All three PMod Boards](/Hardware/boards.jpg)
 
 # Hardware
 
@@ -13,6 +9,7 @@ The second Board that is contained in these repo, extends this principle to use 
 | --- | --- | --- |
 | Pico PMod | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
 | RP2040 PMod | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml) | A PMod Board based on the RP2040 Chip |
+| RP2040 Mini PMod | [![KiCad Testing for RP2040 Mini PMod](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml) | A mini Board with a single PMod connector and SD card reader |
 
 For working with the pre existing PMod Boards I've made a PMod Host board,
 this hosts the accessories such as an [Seven Segment display]() or
