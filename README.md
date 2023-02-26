@@ -9,6 +9,7 @@ The second Board that is contained in these repo, extends this principle to use 
 | --- | --- | --- |
 | Pico PMod | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
 | RP2040 PMod | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml) | A PMod Board based on the RP2040 Chip |
+| RP2040 Mini PMod | [![KiCad Testing for RP2040 Mini PMod](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml) | A mini Board with a single PMod connector and SD card reader |
 
 For working with the pre existing PMod Boards I've made a PMod Host board,
 this hosts the accessories such as an [Seven Segment display]() or
