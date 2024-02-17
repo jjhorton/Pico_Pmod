@@ -34,7 +34,7 @@ jobs:
         replace: ${{ steps.vars.outputs.sha_short }}
 
     
-    - uses: INTI-CMNB/KiBot@v2_k6
+    - uses: INTI-CMNB/KiBot@v2_k7
       with:
         # Required - kibot config file
         config: Hardware/kibot.yml
@@ -79,7 +79,7 @@ jobs:
     
     - name: Setup kicad and kikit
       run: |
-        sudo add-apt-repository --yes ppa:kicad/kicad-6.0-releases
+        sudo add-apt-repository --yes ppa:kicad/kicad-7.0-releases
         sudo apt-get update
         sudo apt-get install --yes --no-install-recommends kicad
         pip3 install kikit
