@@ -85,7 +85,7 @@ outputs:
           name: 'Cod. Digi-Key'
         - Footprint
         - field: Desc
-           name: Descripción
+          name: Descripción
         - 'Quantity Per PCB'
       exclude_filter: 'exclude_any'
       group_fields:  ['digikey#', 'Part']
