@@ -2635,7 +2635,7 @@
     (tstamp 00000000-0000-0000-0000-0000610d4ada)
     (at 157 81.25)
     (attr through_hole)
-    (fp_text reference "G***" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "L1" (at 0 0) (layer "F.SilkS") hide
         (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp da039791-7b00-47a1-b510-a659df748d30)
     )
@@ -2815,7 +2815,7 @@
     (tstamp 00000000-0000-0000-0000-000060f2f782)
     (at 154.5 74.7 180)
     (attr through_hole)
-    (fp_text reference "G***" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "L2" (at 0 0) (layer "F.SilkS") hide
         (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 090eeeca-8982-47a9-a941-efa9320153c9)
     )
