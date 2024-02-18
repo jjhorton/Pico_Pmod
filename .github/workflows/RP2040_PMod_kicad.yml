@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: INTI-CMNB/KiBot@v2_k6
+    - uses: INTI-CMNB/KiBot@v2_k7
       with:
         additional_args: "" 
         # Required - kibot config file
