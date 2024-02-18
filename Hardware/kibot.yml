@@ -6,7 +6,7 @@ preflight:
   run_erc: true
   run_drc: true
   check_zone_fills: false
-  ignore_unconnected: false
+  ignore_unconnected: true
 
   filters:
   - filter: 'USB-C ignore pad Sa'

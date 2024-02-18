@@ -5,7 +5,7 @@ on:
     - cron: "0 8 * * 1"
   pull_request:
     paths:
-      - 'Hardware/Pico_PMod/*.sch'
+      - 'Hardware/Pico_PMod/*.kicad_sch'
       - 'Hardware/Pico_PMod/*.kicad_pcb'
       - 'Hardware/kibot.yml'
       - '.github/workflows/Pico_Pmod_kicad.yml'
@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: INTI-CMNB/KiBot@v2
+    - uses: INTI-CMNB/KiBot@v2_k7
       with:
         # Required - kibot config file
         config: Hardware/kibot.yml
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
-        schema: 'Hardware/Pico_PMod/pico_pmod_host.sch'
+        schema: 'Hardware/Pico_PMod/pico_pmod_host.kicad_sch'
         # optional - PCB design file
         board: 'Hardware/Pico_PMod/pico_pmod_host.kicad_pcb'
 
