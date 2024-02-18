@@ -23,7 +23,7 @@ jobs:
         # optional - prefix to output defined in config
         dir: Hardware/Fabrication
         # optional - schematic file
-        schema: 'Hardware/Pico_PMod/pico_pmod_host.sch'
+        schema: 'Hardware/Pico_PMod/pico_pmod_host.kicad_sch'
         # optional - PCB design file
         board: 'Hardware/Pico_PMod/pico_pmod_host.kicad_pcb'
 
