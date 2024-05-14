@@ -3,6 +3,7 @@ name: "KiCad CI/CD for RP2040 PMod Board"
 on:
   schedule:
     - cron: "0 8 * * 1"
+  workflow_dispatch:
   pull_request:
     paths:
       - 'Hardware/RP2040_PMod/*.kicad_sch'
