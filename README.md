@@ -7,9 +7,9 @@ The aim of this repo is to have a PCB on which I was able to mount a standard
 
 | Board | Build Status | Description |
 | --- | --- | --- |
-| Pico PMod | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
-| RP2040 PMod | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml) | A PMod Board based on the RP2040 Chip |
-| RP2040 Mini PMod | [![KiCad Testing for RP2040 Mini PMod](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml) | A mini Board with a single PMod connector and SD card reader |
+| [Pico PMod](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fjjhorton%2FPico_Pmod%2Ftree%2Fmaster%2FHardware%2FPico_PMod) | [![KiCad CI/CD for Host](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/Pico_Pmod_kicad.yml) | Raspberry Pi Pico Based PMod Breakout Board |
+| [RP2040 PMod](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fjjhorton%2FPico_Pmod%2Ftree%2Fmaster%2FHardware%2FRP2040_PMod) | [![KiCad CI/CD for RP2040 PMod Board](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_PMod_kicad.yml) | A PMod Board based on the RP2040 Chip |
+| [RP2040 Mini PMod](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fjjhorton%2FPico_Pmod%2Ftree%2Fmaster%2FHardware%2FRP2040_Mini_PMod) | [![KiCad Testing for RP2040 Mini PMod](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml/badge.svg)](https://github.com/jjhorton/Pico_Pmod/actions/workflows/RP2040_Mini_PMod_Kicad.yml) | A mini Board with a single PMod connector and SD card reader |
 
 For working with the pre existing PMod Boards I've made a PMod Host board,
 this hosts the accessories such as an [Seven Segment display]() or
