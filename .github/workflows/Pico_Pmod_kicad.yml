@@ -3,6 +3,7 @@ name: "KiCad CI/CD for Host"
 on:
   schedule:
     - cron: "0 8 * * 1"
+  workflow_dispatch:
   pull_request:
     paths:
       - 'Hardware/Pico_PMod/*.kicad_sch'
