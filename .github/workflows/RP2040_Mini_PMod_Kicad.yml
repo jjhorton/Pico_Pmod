@@ -9,7 +9,7 @@ on:
       - 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_sch'
       - 'Hardware/RP2040_Mini_PMod/RP2040_Mini_PMod.kicad_pcb'
       - 'Hardware/kibot.yml'
-      - '.github/workflows/RP2040_Mini_PMod_kicad.yml'
+      - '.github/workflows/RP2040_Mini_PMod_Kicad.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
