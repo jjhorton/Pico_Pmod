@@ -112,6 +112,7 @@ outputs:
   - name: 'bom'
     comment: "BoM for JLC"
     type: bom
+    dir: BoM
     options:
       output: '%f_%i_jlc.%x'
       exclude_filter: 'only_jlc_parts'
