@@ -2877,7 +2877,7 @@
     (property "Datasheet" "" (at 125.73 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "JLC" "C2040" (at 144.78 88.9 0)
+    (property "LCSC#" "C2040" (at 144.78 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1d0eeede-04ff-4907-be6f-9258c1a5bcc9))
