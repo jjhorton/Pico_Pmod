@@ -15,7 +15,7 @@ preflight:
   - filter: 'USB-C ignore pad Sa'
     error: '19'
     regex:  'Pad of J4'
-
+    
 global:
   # We want the revision added to the names for this project
   output: '%f-%i_%r.%x'
@@ -27,6 +27,12 @@ filters:
    exclude_any:
      - column: Reference
        regex: '^(G|#|TP|F).*'
+ - name: only_jlc_parts
+   comment: 'Only parts with JLC code'
+   type: generic
+   include_only:
+     - column: 'LCSC#'
+       regex: '^C\d+'
 
 outputs:
   - name: 'print_sch'
